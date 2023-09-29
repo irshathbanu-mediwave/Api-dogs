@@ -3,22 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Dogs list</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="js/jquery-3.7.1.min.js"></script>
   </head>
   <body>
-    <p>Loading ...</p>
-    <select name="" id="">
-      <option value="foo">foo</option>
-      <option value="bar">bar</option>
-      <option value="baz">baz</option>
-    </select>
-    <button>Get image of dog</button>
-    <img
-      src="https://images.dog.ceo/breeds/akita/An_Akita_Inu_resting.jpg"
-      alt=""
-    />
+    <div id="container">
+      <div id="loadingElement">Loading ...</div>
+      <label>Select the option</label>
+      <div id="selectItem">
+        <select id="DogsOption">
+          <option value="">Select a breed</option>
+          <!-- <option value="bar">bar</option>
+        <option value="baz">baz</option> -->
+        </select>
+      </div>
+      <button id="submitbtn" type="button">Fetch the Image</button>
+      <div id="imageelement"></div>
+    </div>
+    <script src="js/jquery-3.7.1.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
